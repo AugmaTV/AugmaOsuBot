@@ -1,2 +1,2 @@
-# AugmaOsuBot
-A discord bot who can access the Osu! Api v1.0
+<h1>AugmaOsuBot</h1>
+<p>This bot gonna use the Osu! ApiV1.0</p>
