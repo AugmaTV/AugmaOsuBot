@@ -1,0 +1,26 @@
+{
+  "name": "augmaosubot",
+  "version": "1.0.0",
+  "description": "A discord bot who can access the Osu! Api v1",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkumaSama/AugmaOsuBot.git"
+  },
+  "keywords": [
+    "osu"
+  ],
+  "author": "augma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkumaSama/AugmaOsuBot/issues"
+  },
+  "homepage": "https://github.com/AkumaSama/AugmaOsuBot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "node-osu": "^2.2.0"
+  }
+}
