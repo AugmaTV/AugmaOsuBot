@@ -1,16 +1,17 @@
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client()
-const token = require("./appi_key.json").discord
+const token = require("./api_key.json").discord
 
 client.login(token).then(() => {
     console.log("Bot Logged On, Ready To Work")
-    client.user.setActivity("In Dev.", {type: "PLAYING"})
+    client.user.setActivity("§help", {type: "PLAYING"})
 })
 
 client.commands = new Discord.Collection()
 client.aliases = new Discord.Collection()
 client.disabled = new Set()
+client.owner = "AugmaDev#4544"
 
 fs.readdir('./commands/', (error, f) => {
     if (error) {return console.error(error)}

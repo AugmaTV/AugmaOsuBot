@@ -4,11 +4,10 @@ module.exports.run = async(client, message, args) => {
     const embed = new Discord.MessageEmbed()
     .addFields(
         {name: `__about__`, value: `${client.commands.filter(cmd => cmd.help.category === "about").map(cmd => `\`${cmd.help.name}\``).join(" ")}`, inline: true},
-        {name: `__support__`, value: `${client.commands.filter(cmd => cmd.help.category === "support").map(cmd => `\`${cmd.help.name}\``).join(" ")}`, inline: true},
-        {name: `__command__`, value: `${client.commands.filter(cmd => cmd.help.category === "command").map(cmd => `\`${cmd.help.name}\``).join(" ")}`}
+        {name: `__osu__`, value: `${client.commands.filter(cmd => cmd.help.category === "osu").map(cmd => `\`${cmd.help.name}\``).join(" ")}`, inline: true}
         )
     .setFooter(`Made By ${client.owner}`)
-    .setColor(client.color.about)
+    .setColor("PURPLE")
     .setThumbnail(client.user.avatarURL())
 
     message.channel.send(embed)
@@ -16,7 +15,7 @@ module.exports.run = async(client, message, args) => {
 
 module.exports.help = {
     name: "help",
-    cooldown: 5,
+    cooldown: 3,
     aliases: ['h'],
     category: "about"
 }
